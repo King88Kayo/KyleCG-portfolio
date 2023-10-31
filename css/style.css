@@ -180,6 +180,10 @@ nav img {
     color: aliceblue;
 }
 
+#my-work {
+    padding-bottom: 20px;
+}
+
     /* Contact section */
 
 .contact-section {
@@ -195,8 +199,13 @@ nav img {
     font-size: 40px;
 }
 
-.howto-contact {
-    padding: 40px;
+.howto-contact h3 {
+    padding: 15px;
+}
+
+.howto-contact p {
+    padding: 5px;
+    font-size: 20px;
 }
 
   /* Footer */
