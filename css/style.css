@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* #173D7A */
 body {
     margin: 0;
     padding: 0;
@@ -11,10 +11,12 @@ body {
     line-height: 1.5;
   }
 
+    /* Navigation & Hero */
+
 header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(31, 28, 28, 0.7),rgba(240, 240, 240, 0.7)),url(../images/Hero-Banner.jpg);
+    background-image: linear-gradient(rgba(31, 28, 28, 0.7),rgba(77, 77, 77, 0.7)),url(../images/Hero-Banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -42,4 +44,175 @@ nav img {
     display: inline-block;
     padding: 8px 25px;
     position: relative;
+}
+
+.nav-links ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-links ul li a:hover {
+    color: #23A3DC;
+}
+
+
+.hero-text {
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.hero-text p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+    /* About Me */
+
+.about-section {
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #173D7A;
+    color: aliceblue;
+}
+
+.aboutme-heading {
+    padding: 40px;
+    font-size: 40px;
+}
+
+.main-image {
+    width: 250px;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+    /* Portfolio */
+
+.heading2 {
+    text-align: center;
+    margin: 50px auto;
+    color: #173D7A;
+    font-size: 40px;
+  }
+  
+  #myworkGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 400px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "codepen codepen codepen"
+    "github github css3"
+    "google figma css3"
+    
+    ;
+  }
+
+  #codepen {
+    grid-area: codepen;
+    background-image: url("../images/Workimages/codepen.png");
+  }
+  
+  #google {
+    grid-area: google;
+    background-image: url("../images/Workimages/googlewallpaper.png");
+  
+  }
+
+  #github {
+    grid-area: github;
+    background-image: url("../images/Workimages/GitHub-Desktop-Logo.jpg");
+  }
+
+  #figma {
+    grid-area: figma;
+    background-image: url("https://i.pinimg.com/736x/63/a7/b1/63a7b1894b3210d07e434e9d12170586.jpg");
+  }
+  
+
+  
+  #css3 {
+    grid-area: css3;
+    background-image: url("https://constructs.stampede-design.com/wp-content/uploads/2014/10/css3.jpg");
+  }
+ 
+  .myworkGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: space-between;
+  }
+  
+  .heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+.heading a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+    /* Contact section */
+
+.contact-section {
+    min-height: 50vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #173D7A;
+    color: aliceblue;
+}
+
+.contact-heading {
+    padding: 40px;
+    font-size: 40px;
+}
+
+  /* Footer */
+
+  /* Media Queries */
+
+  @media(max-width: 700px) {
+    * {
+        margin: auto;
+        padding: auto;
+        box-sizing: none;
+    }
+    
+    nav {
+        display: block;
+                           
+    nav img {
+        width: 250px;
+        margin: 1px;
+    }        
+    
+    .nav-links ul li {
+        list-style: none;
+        display: block;
+        padding: 2px 112px;
+        position: static;
+    }
+    
 }
